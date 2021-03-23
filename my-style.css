@@ -1,0 +1,129 @@
+/*FONTS*/
+
+@font-face {
+  font-family: DR;
+  src: url(DellaRespira-Regular.ttf);
+}
+@font-face {
+  font-family: Libre;
+  src: url(LibreBaskerville-Bold.ttf);
+}
+@font-face {
+  font-family: LibreI;
+  src: url(LibreBaskerville-Italic.ttf);
+}
+
+/*FONTS*/
+
+#slider {
+  overflow: hidden;
+}
+#slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left:-200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%
+    }
+    100% {
+      left: -400%;
+    }
+
+  }
+
+
+body{
+display: flex;
+justify-content: center;
+background: repeating-linear-gradient(
+  45deg,
+  #AAE6B7,
+  #AAE6B7 20px,
+  #7DAB87 10px,
+  #7DAB87 25px
+);
+
+
+}
+h1 {
+  font-family: DR;
+  background: #f2f2b8;
+}
+
+#container{
+  position: relative;
+  top:100px;
+  width: 500px;
+
+
+}
+
+#hero-image{
+  display: flex;
+  justify-content: center;
+
+}
+
+#hero-image img {
+ height: 350px;
+ margin-bottom: 15px;
+}
+
+#content-box{
+background: #f2f2b8;
+padding: 15px;
+margin-bottom: 15px;
+box-shadow: 5px 10px rgba(0, 0, 0, 0.5);}
+
+ul{
+  font-family: LibreI;
+  position: relative;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+
+a {
+  font-family: Libre;
+  position: relative;
+  text-decoration-color: none;
+  background: #f2f2b8;
+  padding: 15px;
+}
+
+a:hover{
+  background: gray;
+}
